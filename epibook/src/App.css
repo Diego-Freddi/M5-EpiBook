@@ -1,0 +1,181 @@
+.selected {
+    border: 2px solid #f40606;
+    box-shadow: 0 0 10px #f40606;
+}
+
+/* Stili per il pulsante tema, usando la classe già presente */
+.df-theme-button {
+  width: 40px;
+  height: 38px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+
+/* Stili per la barra di ricerca, usando la classe già presente */
+.df-search-input {
+  transition: all 0.5s ease;
+}
+
+/* Stili specifici per il tema scuro, usando le classi di Bootstrap già presenti */
+.bg-dark .df-search-input {
+  background-color: #2b3035;
+  border-color: #495057;
+  color: #fff;
+}
+
+.bg-dark .df-search-input::placeholder {
+  color: #6c757d;
+}
+
+/* Effetti hover per il pulsante tema */
+.df-theme-button:hover {
+  transform: scale(1.05);
+}
+
+/* Focus styles per accessibilità */
+.df-theme-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+}
+
+.book-card {
+    transition: all 0.5s ease;
+}
+
+.book-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.book-card.selected {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Aggiungiamo anche un effetto speciale per il tema scuro */
+.df-dark-mode.book-card:hover {
+    box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+.df-dark-mode {
+    background-color: #212529 !important;
+    border-color: #495057 !important;
+    color: #f8f9fa !important;
+    border-radius: 0.375rem !important;
+}
+
+.df-text-light {
+    color: #f8f9fa !important;
+}
+
+.df-text-muted {
+    color: #adb5bd !important;
+}
+
+.df-dark-input {
+    background-color: #2b3035 !important;
+    border-color: #495057 !important;
+    color: #f8f9fa !important;
+}
+
+.df-dark-input::placeholder {
+    color: #6c757d !important;
+}
+
+/* Stili per l'area commenti in tema scuro */
+.area-commenti.df-dark-mode {
+    background-color: #212529;
+   
+
+}
+
+
+.df-dark-mode .list-group-item {
+    background-color: #2b3035;
+    border-color: #495057;
+}
+
+.df-dark-mode .btn-outline-light {
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.df-dark-mode .btn-outline-light:hover {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.df-dark-mode .df-text-light,
+.df-dark-mode p,
+.df-dark-mode small {
+    color: #f8f9fa !important;
+}
+
+/* Input scuri con angoli arrotondati */
+.df-dark-mode {
+    background-color: #212529 !important;
+    border-color: #495057 !important;
+    color: #f8f9fa !important;
+    border-radius: 0.375rem !important;
+}
+
+/* Stili specifici per form-control e form-select nel tema scuro */
+.df-dark-mode .form-control,
+.df-dark-mode .form-select {
+    background-color: #2b3035 !important;
+    border-color: #495057 !important;
+    color: #f8f9fa !important;
+}
+
+/* Gestione del placeholder */
+.df-dark-mode .form-control::placeholder {
+    color: #6c757d !important;
+}
+
+/* Gestione delle opzioni nel select */
+.df-dark-mode .form-select option {
+    background-color: #2b3035;
+    color: #f8f9fa;
+}
+
+.df-app-container {
+    min-height: 100vh;
+    background-color: #ffffff;  /* Sfondo chiaro di default */
+    transition: background-color 0.5s ease;
+}
+
+.df-app-container.df-dark-mode {
+    background-color: #292e33;  /* Sfondo scuro */
+}
+
+/* Stili per la lista commenti */
+
+.list-group-item {
+    border: 1px solid #a8afb6 !important;
+    border-radius: 0.375rem !important;
+    margin-bottom: 0.5rem;
+}
+
+/* Stili per il dropdown nel tema scuro */
+.df-dark-mode .dropdown-menu {
+    background-color: #212529 !important;
+    border-color: #495057 !important;
+}
+
+.df-dark-mode .dropdown-item {
+    color: #f8f9fa !important;
+}
+
+.df-dark-mode .dropdown-item:hover {
+    background-color: #2b3035 !important;
+    color: #ffffff !important;
+}
+
+/* Stile per l'item attivo */
+.df-dark-mode .dropdown-item.active {
+    background-color: #0d6efd !important;
+    color: #ffffff !important;
+}
+
